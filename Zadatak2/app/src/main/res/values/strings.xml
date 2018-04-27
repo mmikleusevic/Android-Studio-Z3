@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Task 2</string>
+    <string name="Unesi_brojeve">Instert 2 numbers and\nchoose which function you want calculator to do</string>
+    <string name="zbrajanje">+</string>
+    <string name="oduzimanje">-</string>
+    <string name="prikaz_rezultata">Results</string>
+    <string name="dijeljenje">/</string>
+    <string name="mnozenje">*</string>
+</resources>

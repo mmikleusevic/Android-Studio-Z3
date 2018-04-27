@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_top_first">25dp</dimen>
+    <dimen name="text_size_big">25sp</dimen>
+    <dimen name="margin_left_small">5dp</dimen>
+    <dimen name="margin_top">25dp</dimen>
+    <dimen name="text_size">25sp</dimen>
+    <dimen name="contact_margin">15dp</dimen>
+    <dimen name="contact_text_margin">35dp</dimen>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/unesi_brojeve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margina_view"
+        android:text="@string/Unesi_brojeve"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/unesi_br1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/unosText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="197dp"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/unesi_br2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/unosText"
+        android:layout_below="@id/unesi_br1"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:layout_marginStart="@dimen/margina_pocetak"
+        android:id="@+id/button_zbrajanje"
+        android:background="@color/pozadinaBoja"
+        android:textColor="@color/bojaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize"
+        android:layout_below="@id/unesi_br2"
+        android:onClick="showToast"
+        android:text="@string/zbrajanje"
+        android:layout_marginEnd="@dimen/margina_kraj" />
+
+    <Button
+        android:id="@+id/button_oduzimanje"
+        android:background="@color/pozadinaBoja"
+        android:textColor="@color/bojaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unesi_br2"
+        android:textSize="@dimen/textSize"
+        android:layout_toEndOf="@id/button_zbrajanje"
+        android:onClick="showToast"
+        android:text="@string/oduzimanje"
+        android:layout_marginEnd="@dimen/margina_kraj"/>
+
+    <Button
+        android:id="@+id/button_mnozenje"
+        android:layout_width="wrap_content"
+        android:background="@color/pozadinaBoja"
+        android:textColor="@color/bojaText"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unesi_br2"
+        android:textSize="@dimen/textSize"
+        android:layout_toEndOf="@id/button_oduzimanje"
+        android:onClick="showToast"
+        android:text="@string/mnozenje"
+        android:layout_marginEnd="@dimen/margina_kraj"/>
+
+    <Button
+        android:id="@+id/button_dijeljenje"
+        android:layout_width="wrap_content"
+        android:background="@color/pozadinaBoja"
+        android:textColor="@color/bojaText"
+        android:textSize="@dimen/textSize"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unesi_br2"
+        android:layout_toEndOf="@id/button_mnozenje"
+        android:onClick="showToast"
+        android:text="@string/dijeljenje"
+        android:layout_marginEnd="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@id/button_mnozenje"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_scroll">
+
+        <TextView
+            android:id="@+id/textview_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:textAlignment="center"
+            android:text="@string/prikaz_rezultata"
+            android:textColor="@color/bojaText"
+            android:textSize="@dimen/display_text_velicina" />
+    </ScrollView>
+</RelativeLayout>

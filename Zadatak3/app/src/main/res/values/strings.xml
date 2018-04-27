@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Zadatak3</string>
+    <string name="string_name">Marin\nMikleušević</string>
+    <string name="text_picture">Slika</string>
+    <string name="text_title">Programer</string>
+    <string name="about_me">About me</string>
+    <string name="about_me_text">I am a computer programer, unemplyoed, looking for a job. I finished Technical School in Slavonski Brod, after that i finished a course in web design and web development. I am currently seeking employment while also attending android development academy.</string>
+    <string name="experience">Experience</string>
+    <string name="none">None</string>
+    <string name="project">Projects</string>
+    <string name="project_picture">project picture</string>
+    <string name="project_text">This is currently the only project im working on it\'s quite time consuming but you learn a lot</string>
+    <string name="contact">Contact</string>
+    <string name="email">mikleusevicmarin@gmail.com</string>
+    <string name="email_desc">email</string>
+    <string name="skype_desc">skype_desc</string>
+    <string name="skype_text">mikleusevicmarin</string>
+    <string name="phone_desc">phone_desc</string>
+    <string name="phone_text">+385917316969</string>
+</resources>

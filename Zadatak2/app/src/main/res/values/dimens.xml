@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_scroll">25dp</dimen>
+    <dimen name="display_text_velicina">40sp</dimen>
+    <dimen name="textSize">30sp</dimen>
+    <dimen name="margina_view">150dp</dimen>
+    <dimen name="margina_kraj">5dp</dimen>
+    <dimen name="margina_pocetak">10dp</dimen>
+</resources>

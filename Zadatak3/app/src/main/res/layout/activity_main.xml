@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ultra_violet"
+        android:fillViewport="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/margin_left_small"
+            android:background="@color/ultra_violet"
+            android:fontFamily="serif-monospace"
+            android:paddingTop="@dimen/padding_top_first"
+            android:text="@string/string_name"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/text_size_big"
+            tools:ignore="RelativeOverlap" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/margin_left_small"
+            android:layout_marginTop="@dimen/margin_top"
+            android:src="@drawable/slika"
+            app:civ_border_color="@color/white_border"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginStart="@dimen/margin_left_small"
+            android:text="@string/text_title" />
+
+        <TextView
+            android:id="@+id/about_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:paddingStart="@dimen/margin_left_small"
+            android:layout_marginTop="@dimen/margin_top"
+            android:fontFamily="cursive"
+            android:background="@color/colorPrimary"
+            android:text="@string/about_me"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/text_size_big"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/about_me_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_me"
+            android:layout_marginStart="@dimen/margin_left_small"
+            android:fontFamily="serif-monospace"
+            android:text="@string/about_me_text"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_me_text"
+            android:paddingStart="@dimen/margin_left_small"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@color/colorPrimary"
+            android:fontFamily="cursive"
+            android:text="@string/experience"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/text_size_big"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/experience"
+            android:fontFamily="serif-monospace"
+            android:layout_marginStart="@dimen/margin_left_small"
+            android:text="@string/none"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/projects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/none"
+            android:paddingStart="@dimen/margin_left_small"
+            android:fontFamily="cursive"
+            android:text="@string/project"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/text_size_big"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/project_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/projects"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/margin_left_small"
+            android:contentDescription="@string/project_picture"
+            android:src="@drawable/this_one" />
+
+        <TextView
+            android:id="@+id/project_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/project_picture"
+            android:fontFamily="serif-monospace"
+            android:layout_marginStart="@dimen/margin_left_small"
+            android:text="@string/project_text"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textColor="@color/white_text"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_text"
+            android:paddingStart="@dimen/margin_left_small"
+            android:textSize="@dimen/text_size_big"
+            android:layout_marginTop="@dimen/margin_top"
+            android:fontFamily="cursive"
+            android:text="@string/contact"
+            android:layout_below="@id/project_description"
+            android:background="@color/colorPrimary"
+            tools:ignore="RtlSymmetry" />
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/contact_margin"
+            android:src="@drawable/email"
+            android:layout_below="@id/contact"
+            android:paddingStart="@dimen/margin_left_small"
+            tools:ignore="RtlSymmetry"
+            android:contentDescription="@string/email_desc" />
+        <TextView
+            android:id="@+id/email_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textAlignment="center"
+            android:textColor="@color/white_text"
+            android:layout_toEndOf="@id/email"
+            android:text="@string/email"
+            />
+        <ImageView
+            android:id="@+id/skype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginTop="@dimen/contact_margin"
+            android:paddingStart="@dimen/margin_left_small"
+            android:src="@drawable/skype"
+            tools:ignore="RtlSymmetry"
+            android:contentDescription="@string/skype_desc" />
+        <TextView
+            android:id="@+id/skype_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/contact_text_margin"
+            android:textAlignment="center"
+            android:layout_below="@id/email_text"
+            android:text="@string/skype_text"
+            android:textColor="@color/white_text"
+            android:layout_toEndOf="@id/skype"/>
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/skype"
+            android:layout_marginTop="@dimen/contact_margin"
+            android:paddingStart="@dimen/margin_left_small"
+            android:src="@drawable/phone"
+            android:contentDescription="@string/phone_desc"
+            tools:ignore="RtlSymmetry" />
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/contact_text_margin"
+            android:textAlignment="center"
+            android:layout_below="@id/skype_text"
+            android:text="@string/phone_text"
+            android:textColor="@color/white_text"
+            android:layout_toEndOf="@id/phone"/>
+    </RelativeLayout>
+</ScrollView>
